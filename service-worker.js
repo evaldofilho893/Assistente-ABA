@@ -1,0 +1,5 @@
+const CACHE = 'aba-pwa-v3-20260707-03';
+const ASSETS = ['./','./index.html','./manifest.json','./css/style.css','./js/db.js','./js/app.js','./assets/icons/icon-192.png','./assets/icons/icon-512.png'];
+self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS))); });
+self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(()=>self.clients.claim())); });
+self.addEventListener('fetch', e => e.respondWith(caches.match(e.request).then(r => r || fetch(e.request))));
