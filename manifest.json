@@ -1,6 +1,6 @@
 {
-  "name": "Prontuário ABA Offline",
-  "short_name": "ABA",
+  "name": "Assistente ABA",
+  "short_name": "Assistente ABA",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

@@ -1,6 +1,6 @@
-# ABA PWA Offline
+# Assistente ABA
 
-Sistema PWA offline para prontuário, agenda e planner semanal.
+PWA offline para prontuário, agenda e planner semanal ABA.
 
 ## Como publicar no GitHub Pages
 
