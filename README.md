@@ -35,3 +35,9 @@ https://SEU_USUARIO.github.io/aba-pwa-offline/
 ## Atualizações
 
 Quando você enviar uma nova versão para o GitHub, o app atualizará o cache quando for aberto com internet. Se parecer preso numa versão antiga, limpe os dados do site/app no navegador.
+
+## Duração dos atendimentos
+- O cadastro do paciente pode ter uma duração padrão opcional para todos os atendimentos fixos.
+- Cada atendimento fixo também pode ter uma duração específica opcional, que prevalece sobre a duração padrão.
+- Quando houver duração, o horário é exibido como `09:00 às 10:15`.
+- Sem duração padrão e sem duração específica, permanece apenas o horário inicial.
